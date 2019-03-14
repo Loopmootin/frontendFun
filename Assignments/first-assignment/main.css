@@ -34,6 +34,7 @@ body {
     left: 50px;
     top: 50px;
     background-image: url(images/top1left1.png);  
+    z-index: 2;
 }
 
 #top1left2 {
@@ -88,6 +89,96 @@ body {
     left: 95px;
     top: 95px;
     background-image: url(images/top2left5.png);
+}
+
+#top3left1 {
+    left: 100px;
+    top: 100px;
+    background-image: url(images/top3left1.png);
+}
+
+#top3left2 {
+    left: 105px;
+    top: 105px;
+    background-image: url(images/top3left2.png);
+}
+
+#top3left3 {
+    left: 110px;
+    top: 110px;
+    background-image: url(images/top3left3.png);
+}
+
+#top3left4 {
+    left: 115px;
+    top: 115px;
+    background-image: url(images/top3left4.png);
+}
+
+#top3left5 {
+    left: 120px;
+    top: 120px;
+    background-image: url(images/top3left5.png);
+}
+
+#top4left1 {
+    left: 125px;
+    top: 125px;
+    background-image: url(images/top4left1.png);
+}
+
+#top4left2 {
+    left: 130px;
+    top: 130px;
+    background-image: url(images/top4left2.png);
+}
+
+#top4left3 {
+    left: 135px;
+    top: 135px;
+    background-image: url(images/top4left3.png);
+}
+
+#top4left4 {
+    left: 140px;
+    top: 140px;
+    background-image: url(images/top4left4.png);
+}
+
+#top4left5 {
+    left: 145px;
+    top: 145px;
+    background-image: url(images/top4left5.png);
+}
+
+#top5left1 {
+    left: 150px;
+    top: 150px;
+    background-image: url(images/top5left1.png);
+}
+
+#top5left2 {
+    left: 155px;
+    top: 155px;
+    background-image: url(images/top5left2.png);
+}
+
+#top5left3 {
+    left: 160px;
+    top: 160px;
+    background-image: url(images/top5left3.png);
+}
+
+#top5left4 {
+    left: 165px;
+    top: 165px;
+    background-image: url(images/top5left4.png);
+}
+
+#top5left5 {
+    left: 170px;
+    top: 170px;
+    background-image: url(images/top5left5.png);
 }
 
 button {

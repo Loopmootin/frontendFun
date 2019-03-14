@@ -2,19 +2,22 @@
 
 let move1 = document.getElementById('top1left1');
 let move2 = document.getElementById('top1left2');
-let move3 = document.getElementById('top1left3');
-let move4 = document.getElementById('top1left4');
-let move5 = document.getElementById('top1left5');
-let move6 = document.getElementById('top2left1');
-let move7 = document.getElementById('top2left2');
-let move8 = document.getElementById('top2left3');
-let move9 = document.getElementById('top2left4');
-let move10 = document.getElementById('top2left5');
+// let move3 = document.getElementById('top1left3');
+// let move4 = document.getElementById('top1left4');
+// let move5 = document.getElementById('top1left5');
+// let move6 = document.getElementById('top2left1');
+// let move7 = document.getElementById('top2left2');
+// let move8 = document.getElementById('top2left3');
+// let move9 = document.getElementById('top2left4');
+// let move10 = document.getElementById('top2left5');
+// let move11 = document.getElementById('top3left1');
+
+//let move1 = document.querySelectorAll(".brick");
 
 
 // MOVE A BRICK
-if (move1) { 
-
+if (move1) {
+    
     let mousePosition;
     let offset = [0, 0];
     let isDown = false;
@@ -37,18 +40,20 @@ if (move1) {
 
         event.preventDefault();
         if (isDown) {
-
+            
             mousePosition = {
-
                 x: event.clientX,
                 y: event.clientY
             };
+
             move1.style.left = (mousePosition.x + offset[0]) + 'px';
             move1.style.top = (mousePosition.y + offset[1]) + 'px';
         }
     }, true);
 }
 
+
+/*
 // MOVE A BRICK
 if (move2) {
 
@@ -381,3 +386,41 @@ if (move10) {
         }
     }, true);
 }
+
+// MOVE A BRICK
+if (move11) {
+
+    let mousePosition;
+    let offset = [0, 0];
+    let isDown = false;
+
+    move11.addEventListener('mousedown', function (e) {
+
+        isDown = true;
+        offset = [
+            move11.offsetLeft - e.clientX,
+            move11.offsetTop - e.clientY
+        ];
+    }, true);
+
+    document.addEventListener('mouseup', function () {
+
+        isDown = false;
+    }, true);
+
+    document.addEventListener('mousemove', function (event) {
+
+        event.preventDefault();
+        if (isDown) {
+
+            mousePosition = {
+
+                x: event.clientX,
+                y: event.clientY
+            };
+            move11.style.left = (mousePosition.x + offset[0]) + 'px';
+            move11.style.top = (mousePosition.y + offset[1]) + 'px';
+        }
+    }, true);
+}
+*/
