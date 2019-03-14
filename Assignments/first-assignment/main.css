@@ -25,11 +25,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+/*
 .brick:active {
     z-index: 99;
 }
-
+*/
 #top1left1 {
     left: 50px;
     top: 50px;
