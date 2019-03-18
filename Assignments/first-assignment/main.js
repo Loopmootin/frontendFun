@@ -28,25 +28,42 @@ let changePuzzleWin = document.getElementById("win-puzzle");
 let changeBackground = document.querySelectorAll(".brick img");
 
 changePuzzleCat.addEventListener('click', function () {
+    let background = document.getElementById("background");
     
     changeBackground.forEach(element => {
         let newSrc = element.src.replace("win", "kitty");
         element.src = newSrc;
     });
+
+    let newBg = background.src.replace("win", "kitty");
+    background.src = newBg;
 }, true);
 
 changePuzzleWin.addEventListener('click', function () {
+    let background = document.getElementById("background");
 
     changeBackground.forEach(element => {
         let newSrc = element.src.replace("kitty", "win");
         element.src = newSrc;
     });
+
+    let newBg = background.src.replace("kitty", "win");
+    background.src = newBg;
 }, true);
 
 
 /* HELP BUTTON */
-changePuzzleWin.addEventListener('click', function () {
+let helpButton = document.getElementById("help-button");
+let background = document.getElementById("background");
 
+helpButton.addEventListener('mousedown', function () {
+
+    background.style.display = "block";
+}, true);
+
+helpButton.addEventListener('mouseup', function () {
+
+    background.style.display = "none";
 }, true);
 
 
