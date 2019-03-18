@@ -27,7 +27,7 @@ button {
 .board {
     height: 80vh;
     width: 80vw;
-    border: 1px solid #000;
+    outline: 1px solid #000;
     display: block;
     margin: auto;
     position: relative;

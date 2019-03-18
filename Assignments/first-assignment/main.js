@@ -1,4 +1,32 @@
 
+/* RANDOM PLACE BRICKS */
+let placeRandom = document.querySelectorAll(".brick img");
+
+placeRandom.forEach(element => {
+    let randomNumber = Math.floor((Math.random() * 100) + 1);
+
+    element.style.transform = "translate(" + randomNumber + "%, " + randomNumber + "%)";
+});
+
+
+/* FINISH GAME */
+let finishGame = document.getElementById("finish-game");
+
+finishGame.addEventListener('click', function () {
+    let placeReset = document.querySelectorAll(".brick img");
+
+    placeReset.forEach(element => {
+
+        element.style.transform = "translate(0, 0)";
+    });
+}, true);
+
+
+/* CHANGE BACKGROUND IMAGE */
+
+/* HELP BUTTON */
+
+/* MOVE BRICKS */
 let move = document.querySelectorAll(".brick img");
 
 move.forEach(element => {
