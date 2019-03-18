@@ -3,7 +3,7 @@
 let placeRandom = document.querySelectorAll(".brick img");
 
 placeRandom.forEach(element => {
-    let randomNumber = Math.floor((Math.random() * 100) + 1);
+    let randomNumber = Math.floor((Math.random() * 80) + 1);
 
     element.style.transform = "translate(" + randomNumber + "%, " + randomNumber + "%)";
 });
@@ -23,8 +23,32 @@ finishGame.addEventListener('click', function () {
 
 
 /* CHANGE BACKGROUND IMAGE */
+let changePuzzleCat = document.getElementById("cat-puzzle");
+let changePuzzleWin = document.getElementById("win-puzzle");
+let changeBackground = document.querySelectorAll(".brick img");
+
+changePuzzleCat.addEventListener('click', function () {
+    
+    changeBackground.forEach(element => {
+        let newSrc = element.src.replace("win", "kitty");
+        element.src = newSrc;
+    });
+}, true);
+
+changePuzzleWin.addEventListener('click', function () {
+
+    changeBackground.forEach(element => {
+        let newSrc = element.src.replace("kitty", "win");
+        element.src = newSrc;
+    });
+}, true);
+
 
 /* HELP BUTTON */
+changePuzzleWin.addEventListener('click', function () {
+
+}, true);
+
 
 /* MOVE BRICKS */
 let move = document.querySelectorAll(".brick img");
