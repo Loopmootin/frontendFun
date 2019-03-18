@@ -87,7 +87,6 @@ move.forEach(element => {
                 element.offsetTop - e.clientY
             ];
 
-            //element.style.zIndex = element.style.zIndex + 1;
         }, true);
 
         document.addEventListener('mouseup', function () {
