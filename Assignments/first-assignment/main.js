@@ -3,23 +3,17 @@
 let placeRandom = document.querySelectorAll(".brick img");
 
 placeRandom.forEach(element => {
-    let randomNumber = Math.floor((Math.random() * 80) + 1);
+    let randomNumberY = Math.floor((Math.random() * 400) + 1);
+    let randomNumberX = Math.floor((Math.random() * 10) + 1);
+    let randomNumberZ = Math.floor((Math.random() * 10) + 1);
 
-    element.style.transform = "translate(" + randomNumber + "%, " + randomNumber + "%)";
+    element.style.top = 0;
+    element.style.left = -30 + "%";
+
+    element.style.zIndex = randomNumberZ;
+
+    element.style.transform = "translate(" + randomNumberX + "%," + randomNumberY + "%)";
 });
-
-
-/* FINISH GAME */
-let finishGame = document.getElementById("finish-game");
-
-finishGame.addEventListener('click', function () {
-    let placeReset = document.querySelectorAll(".brick img");
-
-    placeReset.forEach(element => {
-
-        element.style.transform = "translate(0, 0)";
-    });
-}, true);
 
 
 /* CHANGE BACKGROUND IMAGE */

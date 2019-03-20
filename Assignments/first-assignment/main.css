@@ -7,21 +7,46 @@
 body {
     font-family: Roboto, sans-serif;
     overflow: hidden;
+    background-color: rgb(104, 154, 219);
 }
 
 .button-field {
     min-height: 10vh;
-    width: 100%;
+    width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 5% 0 auto;
 }
 
 button {
     margin: 0 20px;
-    padding: 5px 15px;
+    padding: 10px 25px;
     border-radius: 5px;
-    background-color: #eee;
+    border: 1px solid #fff;
+}
+
+button:hover {
+    filter: brightness(125%);
+    cursor: pointer;
+}
+
+#help-button {
+    background-color: rgb(235, 97, 97);
+    background-image: linear-gradient(rgb(233, 69, 69), rgb(255, 106, 106));
+    color: #fff;
+}
+
+#cat-puzzle {
+    background-color: rgb(96, 216, 66);
+    background-image: linear-gradient(rgb(109, 255, 96), rgb(129, 255, 139));
+    color: #fff;
+}
+
+#win-puzzle {
+    background-color: rgb(52, 73, 189);
+    background-image: linear-gradient(rgb(125, 96, 255), rgb(92, 135, 255));
+    color: #fff;
 }
 
 .board {
@@ -29,8 +54,9 @@ button {
     width: 70vw;
     outline: 1px solid #000;
     display: block;
-    margin: auto;
+    margin: 0 5% 0 auto;
     position: relative;
+    background-color: #fff;
 }
 
 #background {
@@ -41,6 +67,7 @@ button {
     height: 100%;
     display: none;
     opacity: 0.5;
+    z-index: 9999;
 }
 
 .brick img {
