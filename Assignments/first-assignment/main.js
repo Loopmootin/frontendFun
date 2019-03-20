@@ -13,6 +13,9 @@ placeRandom.forEach(element => {
     element.style.zIndex = randomNumberZ;
 
     element.style.transform = "translate(" + randomNumberX + "%," + randomNumberY + "%)";
+
+    //Hej mig selv
+    
 });
 
 
