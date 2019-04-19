@@ -1,0 +1,21 @@
+// Fonts
+$sans-serif: 'Roboto', sans-serif;
+$font-light: 300;
+$font-bold: 700;
+
+// Colors
+$black: #000;
+$white: #fff;
+
+
+// General Styles
+*, *::before, *::after {  
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $sans-serif;
+}
